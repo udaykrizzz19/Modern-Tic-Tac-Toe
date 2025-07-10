@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const NameInput = ({ onNameSubmit }) => {
   const [name, setName] = useState('');
+  const [captchaVerified, setCaptchaVerified] = useState(false);
+
+  const handleCaptcha = (value) => {
+    if (value) setCaptchaVerified(true);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!captchaVerified) {
+      alert("Please complete the reCAPTCHA.");
+      return;
+    }
     if (name.trim()) {
       onNameSubmit(name.trim());
     }
@@ -29,6 +39,15 @@ const NameInput = ({ onNameSubmit }) => {
           required
           autoFocus
         />
+
+        {/* reCAPTCHA Component - CHANGED LINE BELOW */}
+        <div className="recaptcha-container">
+          <ReCAPTCHA
+            sitekey="6LdDPH4rAAAAACnwxQ90yvCMrjRxfaUO9yBtR7VG"
+            onChange={handleCaptcha}
+          />
+        </div>
+
         <button type="submit" className="game-button">Continue</button>
       </form>
     </motion.div>

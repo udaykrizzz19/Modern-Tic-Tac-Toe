@@ -75,11 +75,11 @@ button, input {
   background-color: var(--card-bg-color);
   border-radius: 30px;
   box-shadow: 0 10px 40px var(--shadow-color);
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem; /* Increased vertical padding for better spacing */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center NameInput vertically */
-  overflow: hidden;
+  justify-content: flex-start; /* Align content to the top */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
   transition: background-color var(--transition-speed);
 }
 
@@ -379,4 +379,12 @@ button, input {
   max-width: 300px;
   margin-top: 0; /* Let the container gap handle spacing */
   background-color: var(--accent-secondary);
+}
+/* --- Styles for Centering reCAPTCHA in the Form --- */
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
