@@ -2,12 +2,7 @@
 
 A classic game of Tic Tac Toe, reimagined with a stunning, modern user interface and a delightful user experience. This isn't just a game; it's a showcase of fluid animations, responsive design, and thoughtful features built with a cutting-edge React tech stack.
 
-### 🔴 [Live Demo](https://your-live-demo-link.com) 🔵
-
-*(Replace the link above with your actual deployed URL from Cloudflare Pages!)*
-
-
-*(Suggestion: Replace this placeholder image with a GIF showcasing the name entry, rules page, and gameplay)*
+### 🔴 [Live Demo] [View On vercel](https://modern-tic-tac-toe-eight.vercel.app/) 🔵
 
 ---
 
@@ -21,7 +16,7 @@ This project is packed with features designed to create a seamless and enjoyable
 *   **🌗 Light & Dark Mode Toggle:** Choose your preferred theme! The app includes a gorgeous, animated toggle that instantly switches between a light and dark color palette. The system's preferred theme is also detected on first load.
 *   **☀️/🌙 Dynamic Greetings:** The header displays a time-appropriate greeting (Good Morning, Afternoon, or Evening) and a matching icon.
 *   **🏆 Clear Winner & Draw States:** The app clearly announces the winner or a draw, making it easy to start a new game.
-*   **🤖 Google reCAPTCHA:** Ensures a secure user entry point before the game begins.
+*   **🤖 Google reCAPTCHA:** Ensures a secure user entry point before the game begins in the background.
 *   **📱 Fully Responsive Design:** The experience is flawless whether you're playing on a large desktop monitor or your mobile phone.
 
 ---
@@ -33,7 +28,6 @@ This project was built using a modern and powerful set of tools:
 *   **[React.js](https://reactjs.org/)** - A JavaScript library for building user interfaces.
 *   **[Vite](https://vitejs.dev/)** - A next-generation frontend tooling for a blazing fast development experience.
 *   **[Framer Motion](https://www.framer.com/motion/)** - A production-ready motion library for React to create fluid animations.
-*   **[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Custom properties (variables) for effortless theming and styling.
 
 ---
 
@@ -77,16 +71,6 @@ Make sure you have Node.js and npm installed on your machine.
     ```
     The application will be available at `http://localhost:5173` (or the next available port).
 
-
-
-    ### Deployment 🌐
-
-This project is configured for easy deployment on platforms like **Cloudflare Pages**.
-
-**Important Note for Cloudflare:** To ensure a successful build, set the following environment variable in your Cloudflare project settings:
-*   **Variable name:** `NODE_VERSION`
-*   **Value:** `20`
-
 ---
 
 ## 🔮 Future Improvements
@@ -101,9 +85,8 @@ While the current version is polished, here are some ideas for future enhancemen
 
 ## 👨‍💻 Author
 
-**[Your Name]** - [your-portfolio-link.com](https://your-portfolio-link.com) - [youremail@example.com](mailto:youremail@example.com)
+**[Uday Krishna]** - [udaykrizzz19](https://github.com/udaykrizzz19)
 
-Project Link: [https://github.com/your-username/your-repo-name](https://github.com/your-username/your-repo-name)
 
 ### Building for Production
 
